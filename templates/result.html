@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <div class="content">
+        <h2>Predicted Final Grade:</h2>
+        <p>{{ predicted_grade }}</p>
+
+        <h2>Mean Absolute Error (MAE):</h2><p>{{ mae }}</p>
+        <h2>Mean Squared Error (MSE):</h2><p>{{ mse }}</p>
+        <h2>R_Squared:</h2><p>{{ r_squared }}</p>
+    </div>
+</body>
+</html>
